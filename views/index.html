@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>학생 로그인</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      body {
+        background-image: url('images/bg_login.png');
+      }
+      div.login {
+        height: 450px;
+        border: solid 10px #dcd8fc;
+      }
+      form {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-light d-flex justify-content-center align-items-center vh-100 login-bg"
+  >
+    <div class="card p-4 shadow-lg rounded-4 login">
+      <h1 class="text-center text-primary mb-4">디지털 역량 진단 검사</h1>
+      <div class="badge bg-light text-primary mx-auto d-block text-center mb-3">
+        학생용
+      </div>
+      <form action="/login" method="POST">
+        <div class="row">
+          <div class="col">
+            <label for="GB1" class="form-label">
+              <input
+                type="text"
+                class="form-control"
+                id="GB1"
+                name="GB1"
+                placeholder="학교"
+              />
+            </label>
+          </div>
+          <div class="col">
+            <label for="GB2" class="form-label">
+              <input
+                type="text"
+                class="form-control"
+                id="GB2"
+                name="GB2"
+                placeholder="학년"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="GB4" class="form-label">
+              <input
+                type="text"
+                class="form-control"
+                id="GB4"
+                name="GB4"
+                placeholder="이름"
+              />
+            </label>
+          </div>
+          <div class="col">
+            <label for="GB3" class="form-label">
+              <input
+                type="text"
+                class="form-control"
+                id="GB3"
+                name="GB3"
+                placeholder="반"
+            /></label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">로그인</button>
+      </form>
+    </div>
+  </body>
+</html>

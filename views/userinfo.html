@@ -1,0 +1,21 @@
+<style>
+  .topMenu {
+    /* 양쪽 끝으로 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+    background-color: #fff;
+  }
+</style>
+<div class="wrap">
+  <div class="topMenu">
+    <div class="toggleMenu">
+      {{ user.GB1 }} | {{ user.GB4 }} | {{ user.GB2 }}학년 {{ user.GB3 }}반
+    </div>
+    <div class="login_group">
+      <a href="/logout" class="logout-link" type="submit">로그아웃</a>
+    </div>
+  </div>
+</div>
